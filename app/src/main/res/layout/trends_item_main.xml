@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <LinearLayout
+        android:clickable="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:descendantFocusability="blocksDescendants" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/face"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="8dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:roundAsCircle="true"
+                fresco:progressBarAutoRotateInterval="1000"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/face"
+                android:layout_marginLeft="8dp"
+                android:layout_alignTop="@+id/face"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                tool:text="海底捞"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                tool:text="30分钟前"
+                android:layout_toRightOf="@+id/face"
+                android:layout_alignBottom="@+id/face"
+                android:textColor="@color/hint_foreground_material_light"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <TextView android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            tool:text="早上起床例行翻朋友圈，昨天一篇文章被公共号里的大v转载，我就想看看有没有火眼金睛的小伙伴，透过马甲把我认出来。结果我发现，朋友圈为了另一件更大的事儿炸锅了。"
+            />
+
+        <GridView
+            android:id="@+id/imageList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:columnWidth="80dp"
+            android:focusable="false"
+            android:horizontalSpacing="6dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/md_divider_height"
+            android:background="@color/md_divider_black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_praise_black"/>
+            <TextView
+                android:id="@+id/praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                tool:text="8"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_comment_small"/>
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                tool:text="8"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
