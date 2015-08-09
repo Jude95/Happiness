@@ -9,14 +9,18 @@
     <application
         android:name=".app.APP"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="MODEL"
             android:value="
             com.jude.happiness.model.TrendsModel,
-            com.jude.happiness.model.PersonModel"
+            com.jude.happiness.model.PersonModel,
+            com.jude.happiness.model.WeddingModel,
+            com.jude.happiness.model.GiftModel
+            "
+
             ></meta-data>
 
         <activity
@@ -24,14 +28,24 @@
             android:label="秀幸福" >
 
         </activity>
-        <activity android:name=".module.launch.LaunchActivity">
+        <activity android:name=".module.launch.LaunchActivity"
+            android:theme="@style/LaunchTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".module.person.PersonDetailActivity"
+            android:label="用户资料"></activity>
+        <activity android:name=".module.trends.TrendsWriteActivity"
+            android:label="发表动态"></activity>
+        <activity android:name=".module.trends.UserTrendsActivity"
+            android:label="我的动态"></activity>
+        <activity android:name=".module.person.AttentionActivity"
+            android:label="我的关注"></activity>
+        <activity android:name=".module.trends.TrendsDetailActivity"
+            android:label="动态"></activity>
     </application>
 
 </manifest>

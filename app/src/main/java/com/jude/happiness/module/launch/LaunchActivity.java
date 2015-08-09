@@ -2,6 +2,7 @@ package com.jude.happiness.module.launch;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.jude.beam.nucleus.factory.RequiresPresenter;
 import com.jude.happiness.app.BaseActivity;
@@ -16,6 +17,6 @@ public class LaunchActivity extends BaseActivity<LaunchPresenter> {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        startActivity(new Intent(this, MainActivity.class));
+        new Handler().postDelayed(() -> startActivity(new Intent(LaunchActivity.this, MainActivity.class)), 800);
     }
 }

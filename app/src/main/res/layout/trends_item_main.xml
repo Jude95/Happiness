@@ -6,12 +6,10 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:descendantFocusability="blocksDescendants">
+    android:layout_marginRight="8dp">
 
 
     <LinearLayout
-        android:clickable="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,8 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:descendantFocusability="blocksDescendants" >
+            android:layout_marginRight="8dp" >
 
             <com.facebook.drawee.view.SimpleDraweeView
                 android:id="@+id/face"
@@ -32,7 +29,6 @@
                 android:layout_marginRight="8dp"
                 fresco:actualImageScaleType="focusCrop"
                 fresco:roundAsCircle="true"
-                fresco:progressBarAutoRotateInterval="1000"
                 />
 
             <TextView
@@ -66,6 +62,8 @@
         <TextView android:id="@+id/mainContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:ellipsize="end"
             android:layout_margin="8dp"
             tool:text="早上起床例行翻朋友圈，昨天一篇文章被公共号里的大v转载，我就想看看有没有火眼金睛的小伙伴，透过马甲把我认出来。结果我发现，朋友圈为了另一件更大的事儿炸锅了。"
             />
@@ -74,9 +72,7 @@
             android:id="@+id/imageList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="false"
             android:columnWidth="80dp"
-            android:focusable="false"
             android:horizontalSpacing="6dp"
             android:numColumns="4"
             android:stretchMode="columnWidth"

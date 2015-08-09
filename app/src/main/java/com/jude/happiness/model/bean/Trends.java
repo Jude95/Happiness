@@ -1,9 +1,11 @@
 package com.jude.happiness.model.bean;
 
+import java.io.Serializable;
+
 /**
  * Created by Mr.Jude on 2015/8/8.
  */
-public class Trends {
+public class Trends implements Serializable{
     private String authorFace;
     private String authorNme;
     private String content;

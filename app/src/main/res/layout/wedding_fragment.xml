@@ -1,13 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <TextView
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Wedding"
-        android:textSize="50sp"/>
+        android:layout_height="match_parent">
 
-</LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:descendantFocusability="blocksDescendants">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="婚礼主题"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"/>
+            <GridView
+                android:id="@+id/imageList"
+                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="468dp"
+                android:columnWidth="80dp"
+                android:focusable="false"
+                android:horizontalSpacing="6dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:verticalSpacing="6dp" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="容纳规模"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"/>
+
+            <GridView
+                android:id="@+id/scaleList"
+                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:columnWidth="80dp"
+                android:focusable="false"
+                android:horizontalSpacing="6dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:verticalSpacing="6dp"
+                android:layout_marginBottom="8dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:background="?colorPrimary"/>
+
+    </LinearLayout>
+</ScrollView>

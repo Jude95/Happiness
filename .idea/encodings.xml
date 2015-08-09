@@ -15,7 +15,13 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/module/trends/TrendsPresenter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/module/wedding/WeddingFragment.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/module/wedding/WeddingPresenter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/utils/AddedView/AddImagePieceView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/utils/AddedView/ImagePieceView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/utils/AddedView/PieceView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/utils/AddedView/PieceViewGroup.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/jude/happiness/utils/RecentDateFormat.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_delete.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_addimg.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shadow_bottom.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shadow_top.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/gift_fragment.xml" charset="UTF-8" />

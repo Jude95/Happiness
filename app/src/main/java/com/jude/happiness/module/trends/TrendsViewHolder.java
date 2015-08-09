@@ -1,5 +1,6 @@
 package com.jude.happiness.module.trends;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.view.ViewGroup;
 import android.widget.GridView;
@@ -11,6 +12,7 @@ import com.jude.happiness.R;
 import com.jude.happiness.model.bean.Trends;
 import com.jude.happiness.utils.RecentDateFormat;
 import com.jude.utils.JTimeTransform;
+import com.jude.utils.JUtils;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -34,20 +36,30 @@ public class TrendsViewHolder extends BaseViewHolder<Trends> {
     @InjectView(R.id.comment)
     TextView comment;
 
+    private Trends data;
+
     public TrendsViewHolder(ViewGroup parent) {
         super(parent, R.layout.trends_item_main);
-        ButterKnife.inject(this,itemView);
+        ButterKnife.inject(this, itemView);
+        itemView.setOnClickListener(v -> {
+            JUtils.Log("fuck");
+            Intent i = new Intent(v.getContext(),TrendsDetailActivity.class);
+            i.putExtra("trends",data);
+            v.getContext().startActivity(i);
+        });
     }
 
     @Override
     public void setData(Trends data) {
+        this.data = data;
         face.setImageURI(Uri.parse(data.getAuthorFace()));
         name.setText(data.getAuthorNme());
         time.setText(new JTimeTransform(data.getTime()).toString(new RecentDateFormat()));
         mainContent.setText(data.getContent());
         praise.setText(data.getPraiseCount());
         comment.setText(data.getCommentCount());
-        imageList.setAdapter(new NetImageListAdapter(itemView.getContext(),data.getImages()));
+        imageList.setAdapter(new NetImageListAdapter(itemView.getContext(), data.getImages()));
+
     }
 
 }

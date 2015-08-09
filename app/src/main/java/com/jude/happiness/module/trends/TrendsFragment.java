@@ -1,11 +1,13 @@
 package com.jude.happiness.module.trends;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -46,6 +48,13 @@ public class TrendsFragment extends NucleusFragment<TrendsPresenter> {
         inflater.inflate(R.menu.menu_trends,menu);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.add){
+            startActivity(new Intent(getActivity(),TrendsWriteActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     public void stopRefresh(){
         mAdapter.clear();

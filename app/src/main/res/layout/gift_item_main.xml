@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginRight="8dp"
+            app:roundedCornerRadius="2dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            tool:text="璀璨钻戒"
+            android:layout_toRightOf="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/name"
+            tool:text="幸福币:800"/>
+
+        <Button
+            android:id="@+id/exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换"
+            android:layout_alignBottom="@+id/cost"
+            android:layout_alignTop="@+id/name"
+            android:textColor="@android:color/white"
+            android:background="@drawable/gift_button"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/cost"
+            android:ellipsize="end"
+            android:maxLines="3"
+            style="@style/TextAppearance.AppCompat.Caption"
+            tool:text="结婚是人生的头等大事，除了要办一个隆重而豪华的婚礼外，挑选一枚璀璨夺目的钻石结婚戒指也是同样重要的，面对现在钻戒不同的镶嵌工艺，到底那种方式才是最好的..."
+            android:layout_toRightOf="@+id/image"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

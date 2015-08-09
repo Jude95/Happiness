@@ -23,18 +23,19 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="16dp"
             android:paddingBottom="4dp"
+            android:layout_marginTop="8dp"
             android:gravity="center">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/tab_trends"
-                android:layout_marginBottom="4dp"/>
+                android:layout_marginBottom="2dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="10sp"
+                android:textColor="?colorPrimary"
                 android:text="动态"/>
         </LinearLayout>
 
@@ -45,18 +46,19 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:paddingBottom="4dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="8dp"
+            android:paddingBottom="4dp">
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/tab_wedding"
-                android:layout_marginBottom="4dp"/>
+                android:layout_marginBottom="2dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="10sp"
+                android:textColor="?colorPrimary"
                 android:text="婚礼"/>
 
         </LinearLayout>
@@ -69,19 +71,20 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:paddingBottom="4dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="8dp"
+            android:paddingBottom="4dp">
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/tab_gift"
-                android:layout_marginBottom="4dp"/>
+                android:layout_marginBottom="2dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="10sp"
-                android:text="消息"/>
+                android:textColor="?colorPrimary"
+                android:text="礼品"/>
         </LinearLayout>
 
         <LinearLayout
@@ -91,17 +94,18 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:paddingBottom="4dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="8dp"
+            android:paddingBottom="4dp">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
                 android:src="@drawable/tab_person"
-                android:layout_marginBottom="4dp"/>
+                android:layout_marginBottom="2dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="10sp"
+                android:textColor="?colorPrimary"
                 android:text="我的"/>
         </LinearLayout>
     </LinearLayout>
